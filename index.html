@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I-Panels</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.wallpapertip.com/wmimgs/237-2372507_solar-energy-wallpaper.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">I-PANELS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TECHNOLOGIES USED</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">TECHNOLOGIES USED</a>
+   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">I-Panels using Arduino and GSM</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">I-Panels using Arduino and GSM</span><br>
+    <span class="w3-large">Clean your panels by just one click</span>
+    <p><a href="password.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Commands</a></p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE PROJECT</h3>
+  <p class="w3-center w3-large">Key features of our project </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-male w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Reduced Manpower</p>
+      <p>Current system is totaly dependent on human. So we have designed the system in a way to reduce human intervention.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Time Saving</p>
+      <p>It is a waste of human efforts for this type of simple work.The proposed system saves the customers time by completing the work with just one click.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-tint w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Reduced Water Wastage</p>
+      <p>Current system wastes a lot of water but here, the water is filtered and reused for further purposes.</p>
+    </div>
+       <div class="w3-quarter">
+      <i class="fa fa-money w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Affordable</p>
+      <p>The proposed system is much cheaper than already available systems and affordable by anyone.</p>
+    </div>
+   
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Description:</h3>
+      <p>I-panels is a smart system which can be operated by a smart device remotely, and the main purpose of this system is to clean solar panels smartly. It will clean the solar pannels by it self by just giving a simple command from your smart device.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View the Technologies used</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://greentumble.com/wp-content/uploads/2017/12/maintenance-and-cleaning-of-solar-panels.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Technologies Used</h3>
+  <p class="w3-center w3-large">What we've used in the project </p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+ <div class="w3-col l3 m6">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Arduino UNO">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.electronicscomp.com/image/cache/catalog/sim900a-gsm-gprs-module-india-400x400.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="GSM SIM900A ">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.electronicscomp.com/image/cache/catalog/4-road-channel-relay-module-with-light-coupling-12v-2-400x400.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Relay Module">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.electronicscomp.com/image/cache/catalog/r385-6-12v-dc-mini-aquarium-water-pump-800x800.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Water Motor">
+    </div>
+        <div class="w3-col l3 m6">
+      <img src="https://potentiallabs.com/cart/image/cache/catalog/Oct-2018%20components/TCS-Invoice%20001-700x483.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jumper Wires">
+    </div>
+     
+  </div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who made the project</p>
+  <div class="w3-row-padding " style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="komaldeep.jpg" alt="Komaldeep" style="width:100%">
+        <div class="w3-container">
+          <h3>Komaldeep S. Mangat</h3>
+          <p class="w3-opacity">B.Tech (IT)</p>
+          <p></p>
+          <p><button class="w3-button w3-light-grey w3-block"><a href="mailto: komaldeepsinghmangat@gmail.com" ><i class="fa fa-envelope"></i> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="manpreet.jpg" alt="Manpreet" style="width:100%">
+        <div class="w3-container">
+          <h3>Manpreet Kaur</h3>
+          <p class="w3-opacity">B.Tech (IT)</p>
+          <p></p>
+          <p><button class="w3-button w3-light-grey w3-block"><a href="mailto: manpreet3166@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope"></i> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+    
+   
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Ludhiana, Punjab</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9877965263</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: manpreet3166@gmail.com</p>
+    <br>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+ <p class="w3-small">Copyright © 2022 All rights reserved</p>
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
